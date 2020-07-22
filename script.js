@@ -26,7 +26,7 @@ function stringToNum(num) {
 }
 
 function handleNum(num) {
-    if (inputDisplay.textContent.length >= 15) {
+    if (currentValue.length >= 15) {
         return
     }
    
@@ -133,7 +133,10 @@ function calculate() {
 
 function updateDisplay(button) {
    
-    if (inputDisplay.textContent.length >= 15) {
+    if (currentValue.length >= 15) {
+        return
+    }
+    if (inputDisplay.textContent.length >= 60) {
         return
     }
     if (inputDisplay.textContent == "0" && button.textContent == "0") {
