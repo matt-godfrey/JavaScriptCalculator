@@ -1,0 +1,211 @@
+body, html {
+    background-color: #189596;
+    user-select: none;
+}
+body h3 {
+    text-align: center;
+}
+#calculator {
+   border: 1px solid #0C0C0C;
+   background-color: black;
+    height: 425px;
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#displayContainer {
+    text-align: end;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    background-color: black;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+       word-break: break-all;
+    
+    }
+
+    #inputDisplay {
+        
+        font-size: 100%;
+        margin-right: 5px;
+        margin-top: 5px;
+        word-wrap: break-word;
+       word-break: break-all;
+        
+    }
+
+   #sisplay {
+       height: auto;
+       font-size: 140%;
+       margin-right: 5px;
+       word-wrap: break-word;
+       word-break: break-all;
+   }
+
+.buttons {
+    margin: 4px;
+    /* box-shadow: 1px 1px 1px black; */
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "clear delete divide multiply"
+                         "seven eight nine subtract"
+                         "four five six add"
+                         "one two three equal"
+                         "zero zero decimal equal";   
+}
+
+.button:hover {
+    color: black;
+    border: 1px solid white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #4B4A4A;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    cursor: context-menu;
+    
+}
+
+#clear {
+    background-color: #D7383A;
+    grid-area: clear;
+}
+
+#delete {
+    background-color: #032368;
+    grid-area: delete;
+}
+
+#divide {
+    
+    grid-area: divide;
+}
+
+#multiply {
+    
+    grid-area: multiply;
+}
+
+#seven {
+    
+    grid-area: seven;
+}
+
+#eight {
+    
+    grid-area: eight;
+}
+
+#nine {
+    
+    grid-area: nine;
+}
+
+#subtract {
+    
+    grid-area: subtract;
+}
+
+#four {
+    
+    grid-area: four;
+}
+
+#five {
+    
+    grid-area: five;
+}
+
+#six {
+    
+    grid-area: six;
+}
+
+#add {
+    
+    grid-area: add;
+}
+
+#one {
+    
+    grid-area: one;
+}
+
+#two {
+    
+    grid-area: two;
+}
+
+#three {
+    
+    grid-area: three;
+}
+
+#equals {
+    background-color: #032368;
+    grid-area: equal;
+}
+
+#zero {
+    
+    grid-area: zero;
+}
+
+#decimal {
+    
+    grid-area: decimal;
+}
+
+@media (max-width: 1024px) {
+    #calculator {
+        width: 900px;
+        height: 1000px;
+    }
+    #inputDisplay {
+        font-size: 160%;
+    }
+    #display {
+        font-size: 200%;
+    }
+    .button {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 770px) {
+    #calculator {
+        width: 600px;
+        height: 900px;
+    }
+    #inputDisplay {
+        font-size: 130%;
+    }
+    #display {
+        font-size: 170%;
+    }
+}
+
+@media (max-width: 375px) {
+    #calculator {
+        width: 350px;
+        height: 500px;
+    }
+}
+
